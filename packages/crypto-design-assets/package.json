@@ -13,15 +13,10 @@
     "eslint": "^8.57.0",
     "typescript": "5.5.4"
   },
-  "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
-  },
   "name": "@repo/crypto-design-assets",
   "private": true,
   "scripts": {
-    "generate:component": "turbo gen react-component",
+    "generate:assets": "node src/index.ts",
     "lint": "eslint . --max-warnings 0"
   },
   "version": "0.0.0"
